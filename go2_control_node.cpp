@@ -104,6 +104,7 @@ private:
 
         // 속도 입력이 감지되면 즉시 MOVE 모드(9)로 전환
         if (std::abs(target_vx_) > 0.001 || std::abs(target_vy_) > 0.001 || std::abs(target_vyaw_) > 0.001) {
+            RCLCPP_INFO(this->get_logger(), "vx: %f, vy: %f, vyaw: %f", target_vx_, target_vy_, target_vyaw_);
             current_mode_ = 9; 
             action_done_ = false;
         }
