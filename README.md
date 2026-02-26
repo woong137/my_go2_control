@@ -36,5 +36,6 @@ colcon build
 ### run
 
 ```bash
+source ~/.bashrc
 ros2 run unitree_ros2_example my_go2_control
 ```
